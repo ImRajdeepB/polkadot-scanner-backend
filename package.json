@@ -6,7 +6,7 @@
     "start": "node index.js",
     "build": "tsc",
     "postinstall": "yarn build",
-    "start:ts": "ts-node index.ts",
+    "start:dev": "ts-node index.ts",
     "start:prod": "tsc && node index.js"
   },
   "license": "MIT",

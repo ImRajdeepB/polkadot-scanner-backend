@@ -66,7 +66,7 @@ const resolvers = {
 
 async function startApolloServer(typeDefs: any, resolvers: any) {
   const corsOptions = {
-    origin: "*",
+    origin: process.env.ALLOWED_ORIGIN,
     credentials: false,
   };
   const app = express();
